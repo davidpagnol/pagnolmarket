@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100%;
+
+}
+.navbar{
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    z-index: 999;
+    background-color: #e8491d;
+    overflow: hidden;
+    margin: auto;
+    
+}
+
+.navbar .logo h1{
+       color:white ;
+       cursor: pointer;
+       font-size: 35x;
+       padding-left: 20px;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    border-radius: 5px;
+    border-bottom: black; 
+        
+}
+.navbar .logo .menu li a{
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+           
+}
+.navbar .logo .menu li .active{
+    border-bottom: 2px solid white;
+}
+
+.navbar .menu li .a:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.content{
+    background-image: url(img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    height: 60vh;
+}
+
+.content h1{
+    font-size: 35px;
+
+}
+
+.content .al{
+    background: red;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(248, 251, 252);
+}
+
+.content .al:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.content p{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.produits_texte{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 30px;
+    color: rgb(33, 12, 230);
+}
+.section_produits{
+    width: 100%;
+    height: auto;
+    background: #f7f8ef;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+	
+    
+    
+    
+}
+.produits{
+    display: grid;
+    grid-template-columns: repeat(auto,minmax(300px,auto));
+   
+
+   
+} 
+.produits .carte{
+    width: 280px;
+    background: #b1adad;
+    box-shadow: 2px 10px 12px rgba(243, 240, 240, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.produits .carte img{
+    height: 250px;
+    width: 280px;
+    border-radius: 5px;
+   
+}
+.produits .carte .desc{
+    padding: 5px 20px;
+    opacity: 100%;
+    font-weight: bold;
+    color: black;
+}
+
+
+.produits .carte .titre{
+    font-weight: 1000;
+    font-size: 20px;
+    color: black;
+    padding: 0 20px;
+    font-weight: bold;
+
+
+}
+.produits .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 1000;
+    padding: 20px;
+}
+.produits .carte .prix{
+    color: red;
+    font-size: 20px;
+    font-weight: 1000;
+    font-weight: bold;
+    
+}
+
+.produits .carte .achat{
+    color: red;
+    font-size: 13px;
+    font-weight: 900;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+.produits .carte .box .achat:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+footer{
+    background: #424144;
+    height: 5vh;
+}
+footer p{
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    background: #e8491d;
+    font-weight: bold;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #424144;
+}
+
+.detail p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+   
+
+}
+.lo{
+    width: 100px;
+}
+
+.dark{
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+.celia{
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;  
+}
+
+.total{
+    display: flex;
+    justify-content: flex;
+    margin-top: 1.5rem;
+    border-top: #e8491d;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+
+
+@media screen and(max-width:1200px) {
+
+    .produits{
+        width: 40%;
+        align-items: center;
+
+
+    }
+
+
+    
+}
+
+@media screen and(max-width:600px) {
+
+    .box
+    
+    {
+
+        width: 90%;
+
+        
+    }
+
+    
+}
+
